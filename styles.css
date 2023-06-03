@@ -92,6 +92,17 @@ body {
   color: blue;
 }
 
+.footer a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -5px;
+}
+
+.footer a:last-child {
+  margin-right: 0;
+}
+
+
 .sidebar {
   position: fixed;
   top: 50%;
