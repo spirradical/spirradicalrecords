@@ -11,6 +11,10 @@ body {
   background-size: cover;
 }
 
+body {
+  margin-bottom: 0;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #18181a;
