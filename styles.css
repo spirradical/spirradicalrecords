@@ -56,7 +56,8 @@ body {
   margin: 20px;
 }
 
-.container h1 {
+.container h1,
+.container p {
   letter-spacing: ;
   word-spacing: 5px;
   font-family: "Times New Roman", Times, serif;
@@ -68,22 +69,9 @@ body {
   margin-bottom: 10px;
 }
 
-.container p {
-  letter-spacing: ;
-  word-spacing: 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: light;
-  color: white;
-  text-align: center;
-  background-color: #18181a;
-}
-
 .footer {
   background-color: #18181a;
   padding: 30px;
-  background: #18181a;
-  background-clip: border-box;
   text-align: center;
   color: white;
   height: 100px;
@@ -91,10 +79,7 @@ body {
   margin-top: 0;
 }
 
-.footer a:link {
-  color: white;
-}
-
+.footer a:link,
 .footer a:visited {
   color: white;
 }
@@ -125,6 +110,3 @@ body {
   background-color: #aaa;
   color: #fff;
 }
-
-
-
