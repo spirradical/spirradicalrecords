@@ -113,14 +113,30 @@ body {
   z-index: 999;
 }
 
-.sidebar-button.home {
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a.home {
   color: black;
 }
 
-.sidebar-button.home:hover {
+.sidebar a.home:hover {
   background-color: #aaa;
   color: #fff;
 }
+
 
 .content {
   background-color: #18181a; /* Same as the main page background color */
