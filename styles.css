@@ -114,3 +114,14 @@ body {
   background-color: #aaa;
   color: #fff;
 }
+
+.content {
+  background-color: black;
+  color: white;
+}
+
+.content h1,
+.content p {
+  color: white;
+}
+
