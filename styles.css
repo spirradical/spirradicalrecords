@@ -106,3 +106,25 @@ body {
 .footer a:active {
   color: blue;
 }
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.sidebar-button.home {
+  color: black;
+}
+
+.sidebar-button.home:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+
+
