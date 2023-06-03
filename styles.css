@@ -115,12 +115,15 @@ body {
   background-color: #18181a; /* Same as the main page background color */
   color: white;
   padding: 20px;
+  text-align: center; /* Center the text */
 }
 
 .content h1 {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0; /* Remove default top margin */
 }
+
 
 .content p {
   font-size: 16px;
