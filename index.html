@@ -154,22 +154,24 @@ a:active {
 }
 
 .sidebar-button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #ddd;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+      display: block;
+      margin-bottom: 10px;
+      padding: 15px 20px; /* Adjust the padding to increase button size */
+      background-color: #ddd;
+      border: none;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px; /* Adjust the font size as desired */
+      transition: background-color 0.3s ease; /* Add a transition effect for a smoother hover effect */
+    }
 
-.sidebar-button:hover {
-  background-color: #aaa;
-  color: #fff;
-}
+    .sidebar-button:hover {
+      background-color: #aaa;
+      color: #fff;
+    }
       
 .soundcloud-container {
   display: flex;
@@ -218,9 +220,10 @@ a:active {
   </div>
   
   <div class="sidebar">
-  <button class="sidebar-button">Bio</button>
+  <button class="sidebar-button">Home</button>
+  <button class="sidebar-button">About</button>
+  <button class="sidebar-button">Services</button>  
   <button class="sidebar-button">Music</button>
-  <button class="sidebar-button">Blog</button>
 </div>
 
 
