@@ -114,19 +114,21 @@ body {
 .content {
   background-color: #18181a; /* Same as the main page background color */
   color: white;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
   padding: 20px;
+  text-align: center; /* Center the text horizontally */
 }
 
 .content h1 {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 0; /* Remove default top margin */
+  margin: 0;
 }
+
 
 
 
