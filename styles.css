@@ -8,11 +8,7 @@ body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   overflow: auto;
-  background-size: cover;
-}
-
-body {
-  margin-bottom: 0;
+  background-color: #18181a;
 }
 
 .topnav {
@@ -116,19 +112,17 @@ body {
 }
 
 .content {
-  background-color: #18181a;
-  color: #f2f2f2;
+  background-color: #18181a; /* Same as the main page background color */
+  color: white;
   padding: 20px;
 }
 
 .content h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #f2f2f2;
 }
 
 .content p {
   font-size: 16px;
   line-height: 1.5;
-  color: #f2f2f2;
 }
