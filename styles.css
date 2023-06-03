@@ -116,17 +116,19 @@ body {
 }
 
 .content {
-  background-color: black;
-  color: white;
+  background-color: #18181a;
+  color: #f2f2f2;
   padding: 20px;
 }
 
 .content h1 {
   font-size: 24px;
   font-weight: bold;
+  color: #f2f2f2;
 }
 
 .content p {
   font-size: 16px;
   line-height: 1.5;
+  color: #f2f2f2;
 }
