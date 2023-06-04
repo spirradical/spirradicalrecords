@@ -109,18 +109,17 @@ body {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  z-index: 999;
-  background-color: transparent; /* Remove the background color */
-  padding: 0; /* Remove the padding */
+  z-index: 999; /* Add the z-index value */
 }
 
-.sidebar a {
+.sidebar-button {
   display: block;
   margin-bottom: 10px;
-  padding: 0; /* Remove the padding */
-  background-color: transparent; /* Remove the background color */
-  border: none; /* Remove the border */
-  text-align: left; /* Adjust the text alignment */
+  padding: 15px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -128,11 +127,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.sidebar a.home {
+.sidebar-button.home {
   color: black;
 }
 
-.sidebar a.home:hover {
+.sidebar-button.home:hover {
   background-color: #aaa;
   color: #fff;
 }
