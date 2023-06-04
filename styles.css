@@ -115,7 +115,7 @@ body {
 .sidebar-button {
   display: block;
   margin-bottom: 10px;
-  padding: 15px 20px;
+  padding: 15px; /* Adjust the padding to control the button width */
   background-color: #ddd;
   border: none;
   border-radius: 6px;
@@ -125,8 +125,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  width: 100%; /* Add this line to set the width to 100% */
 }
+
 
 
 .sidebar-button.home {
