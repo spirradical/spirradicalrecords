@@ -136,6 +136,9 @@ body {
   color: #fff;
 }
 
+.sidebar {
+  width: 200px;
+}
 
 
 .content {
