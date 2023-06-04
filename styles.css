@@ -52,7 +52,7 @@ body {
 }
 
 .main-content {
-  margin-bottom: 50px; /* Adjust the margin-bottom value as needed */
+  margin-bottom: -50px; /* Adjust the negative margin-bottom value as needed */
 }
 
 .content {
