@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: calc(100vh - 150px); /* Adjust the value to leave space for the footer */
 }
 
 .content a {
@@ -75,13 +76,10 @@ body {
 .footer {
   background-color: #18181a;
   padding: 30px;
-  background: #18181a;
   background-clip: border-box;
   text-align: center;
   color: white;
-  height: 100px;
   margin: 0;
-  margin-top: 0;
 }
 
 .footer a {
