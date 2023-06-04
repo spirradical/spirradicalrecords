@@ -1,5 +1,4 @@
-    <style>
-      * {
+* {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
   margin: 0;
@@ -15,8 +14,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #18181a;
-  padding: 10px 0; /* Add top and bottom padding */
-
+  padding: 10px 0;
 }
 
 .topnav a {
@@ -33,27 +31,26 @@ body {
   color: black;
 }
 
-      .banner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 
-    .banner h1 {
-      font-size: 48px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-    .banner h6 {
-      font-size: 14px;
-      font-weight: lighter;
-    }
-      
-      
+.banner h6 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
 .content {
   background-color: #18181a;
   padding: 10px;
@@ -92,8 +89,7 @@ h1 {
   color: white;
   text-align: center;
   background-color: #18181a;
-  margin-bottom: 10px; /* Add bottom margin */
-
+  margin-bottom: 10px;
 }
 
 h6 {
@@ -128,11 +124,9 @@ a:active {
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
-  background-color: #18181a; /* Set the background color */
-  position: relative; /* Add position: relative */
+  background-color: #18181a;
+  position: relative;
 }
-      
-
 
 .image-container img {
   max-width: 100%;
@@ -144,15 +138,14 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
-      
+
 .image-size {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 300px; /* Adjust the height as per your requirement */
+  max-height: 300px;
   object-fit: contain;
 }
-
 
 .sidebar {
   position: fixed;
@@ -161,7 +154,7 @@ a:active {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  z-index: 999; /* Add the z-index value */
+  z-index: 999;
 }
 
 .sidebar-button {
@@ -188,18 +181,14 @@ a:active {
   color: #fff;
 }
 
-
-
-
-      
 .soundcloud-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 200%; /* Adjust the maximum width as per your requirement */
-  overflow: hidden; /* Hide any overflowing content */
-  background-color: #18181a; /* Set the desired background color */
-  padding: 10px; /* Add padding if needed */
+  max-width: 200%;
+  overflow: hidden;
+  background-color: #18181a;
+  padding: 10px;
 }
 
 .soundcloud-description {
@@ -210,16 +199,11 @@ a:active {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
   font-weight: 100;
 }
-      
+
 .image-container img {
-  max-width: 100%; /* Increase the value to increase the image size */
-  max-height: 300px; /* Adjust the height as per your requirement */
+  max-width: 100%;
+  max-height: 300px;
 }
-
-
-
-      
-    </style>
