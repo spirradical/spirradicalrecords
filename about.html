@@ -8,76 +8,31 @@
   <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <script src="https://kit.fontawesome.com/386bea0249.js" crossorigin="anonymous"></script>
-  <style>
-    /* Add the following CSS styles */
-    .sidebar {
-      position: fixed;
-      top: 50%;
-      left: 20px;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      z-index: 999; /* Add the z-index value */
-    }
-
-    .sidebar-button {
-      display: block;
-      margin-bottom: 10px;
-      padding: 15px 20px;
-      background-color: #ddd;
-      border: none;
-      border-radius: 6px;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    .sidebar-button.home {
-      color: black;
-    }
-
-    .sidebar-button.home:hover {
-      background-color: #aaa;
-      color: #fff;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="topnav">
-    <div class="banner">
-      <h1>SPIRRADICAL RECORDS</h1>
-      <h6>Est. 2021</h6>
+  <div class="container">
+    <div class="sidebar">
+      <a class="sidebar-button" href="index.html">Home</a>
+      <a class="sidebar-button active" href="about.html">About</a>
+      <a class="sidebar-button" href="#">Services</a>
+      <a class="sidebar-button" href="#">Music</a>
+    </div>
+
+    <div class="content">
+      <h1>About Spirradical Records</h1>
+      <p>Welcome to Spirradical Records! Founded in 2021, Spirradical Records is an independent music label dedicated to bringing you the best sounds and talents from around the world. Our passion for music drives us to discover emerging artists and showcase their unique creations to a global audience. We believe in the power of music to inspire, uplift, and connect people on a profound level. With a diverse range of genres and styles, we aim to create a platform where artists can thrive and music lovers can discover their next favorite tune. Join us on this Spirradical journey and let the music speak to your soul.</p>
+      <p>Peace out</p>
     </div>
   </div>
 
-  <div class="sidebar">
-    <a class="sidebar-button home" href="index.html">Home</a>
-    <a class="sidebar-button active" href="about.html">About</a>
-    <a class="sidebar-button home" href="#">Services</a>
-    <a class="sidebar-button home" href="#">Music</a>
+  <div class="footer">
+    <a href="https://open.spotify.com/artist/3JvPcL2800wv1UXCGZtGkY?si=IuAgMYaAR0Cp1KtzYac7-w&nd=1" target="_blank"><i class="fab fa-spotify fa-2x"></i></a>
+    <a href="https://www.instagram.com/zachary_wj_spiro/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://soundcloud.com/zacharywjspiro" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a>
+    <a href="mailto:zacharywjspiro@gmail.com" target="_blank"><i class="fas fa-paper-plane fa-2x"></i></a> 
   </div>
 
-  <div class="content">
-    <h1>About Spirradical Records</h1>
-    <p>Welcome to Spirradical Records! Founded in 2021, Spirradical Records is an independent music label dedicated to bringing you the best sounds and talents from around the world. Our passion for music drives us to discover emerging artists and showcase their unique creations to a global audience. We believe in the power of music to inspire, uplift, and connect people on a profound level. With a diverse range of genres and styles, we aim to create a platform where artists can thrive and music lovers can discover their next favorite tune. Join us on this Spirradical journey and let the music speak to your soul.</p>
-    <p>Peace out</p>
-  </div>
+</body>
 
- <div class="footer">
-  <a href="https://open.spotify.com/artist/3JvPcL2800wv1UXCGZtGkY?si=IuAgMYaAR0Cp1KtzYac7-w&nd=1" target="_blank">
-    <i class="fab fa-spotify fa-2x"></i>
-  </a>
-  <a href="https://www.instagram.com/zachary_wj_spiro/?hl=en" target="_blank">
-    <i class="fab fa-instagram fa-2x"></i>
-  </a>
-  <a href="https://soundcloud.com/zacharywjspiro" target="_blank">
-    <i class="fab fa-soundcloud fa-2x"></i>
-  </a>
-  <a href="mailto:zacharywjspiro@gmail.com" target="_blank">
-    <i class="fas fa-paper-plane fa-2x"></i>
-  </a>
-</div>
+</html>
