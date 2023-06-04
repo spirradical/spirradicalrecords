@@ -113,7 +113,17 @@ body {
   z-index: 1;
 }
 
-.sidebar a {
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 999; /* Add the z-index value */
+}
+
+.sidebar-button {
   display: block;
   margin-bottom: 10px;
   padding: 15px 20px;
@@ -128,11 +138,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.sidebar a.home {
+.sidebar-button.home {
   color: black;
 }
 
-.sidebar a.home:hover {
+.sidebar-button.home:hover {
   background-color: #aaa;
   color: #fff;
 }
