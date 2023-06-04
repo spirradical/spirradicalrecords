@@ -102,15 +102,15 @@ body {
   margin-right: 0;
 }
 
-
 .sidebar {
   position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  z-index: 1;
 }
 
 .sidebar a {
@@ -137,17 +137,13 @@ body {
   color: #fff;
 }
 
-
 .content {
-  background-color: #18181a; /* Same as the main page background color */
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 200px;
   padding: 20px;
-  text-align: center; /* Center the text horizontally */
+  background-color: #18181a;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .content h1 {
@@ -155,9 +151,6 @@ body {
   font-weight: bold;
   margin: 0;
 }
-
-
-
 
 .content p {
   font-size: 16px;
