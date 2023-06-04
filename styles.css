@@ -1,4 +1,5 @@
-* {
+    <style>
+      * {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
   margin: 0;
@@ -8,13 +9,14 @@ body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   overflow: auto;
-  background-color: #18181a;
+  background-size: cover;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #18181a;
-  padding: 10px 0;
+  padding: 10px 0; /* Add top and bottom padding */
+
 }
 
 .topnav a {
@@ -31,33 +33,57 @@ body {
   color: black;
 }
 
-.banner {
+      .banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .banner h6 {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+      
+      
+.content {
+  background-color: #18181a;
+  padding: 10px;
+  text-align: right;
+  color: white;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.content a {
+  display: inline-block;
+  margin: 10px;
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #18181a;
+  padding: 30px;
+  background: #18181a;
+  background-clip: border-box;
   text-align: center;
   color: white;
+  height: 100px;
+  margin: 0;
+  margin-top: 0;
 }
 
-.banner h1 {
-  font-size: 48px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.banner h6 {
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-.container {
-  text-align: center;
-  margin: 20px;
-}
-
-.container h1,
-.container p {
+h1 {
   letter-spacing: ;
   word-spacing: 5px;
   font-family: "Times New Roman", Times, serif;
@@ -66,41 +92,67 @@ body {
   color: white;
   text-align: center;
   background-color: #18181a;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Add bottom margin */
+
 }
 
-.footer {
-  background-color: #18181a;
-  padding: 30px;
+h6 {
+  letter-spacing: ;
+  word-spacing: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: light;
+  color: white;
   text-align: center;
-  color: white;
-  height: 100px;
-  margin: 0;
-  margin-top: 0;
+  background-color: #18181a;
 }
 
-.footer a:link,
-.footer a:visited {
+a:link {
   color: white;
 }
 
-.footer a:hover {
+a:visited {
+  color: white;
+}
+
+a:hover {
   color: hotpink;
 }
 
-.footer a:active {
+a:active {
   color: blue;
 }
 
-.footer a {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: -5px;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  background-color: #18181a; /* Set the background color */
+  position: relative; /* Add position: relative */
+}
+      
+
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  background: none;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+      
+.image-size {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust the height as per your requirement */
+  object-fit: contain;
 }
 
-.footer a:last-child {
-  margin-right: 0;
-}
 
 .sidebar {
   position: fixed;
@@ -111,7 +163,6 @@ body {
   flex-direction: column;
   z-index: 999; /* Add the z-index value */
 }
-
 
 .sidebar-button {
   display: block;
@@ -126,10 +177,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  width: 100%; /* Add this line to set the width to 100% */
 }
-
-
 
 .sidebar-button.home {
   color: black;
@@ -142,22 +190,33 @@ body {
 
 
 
-.content {
-  margin-left: 200px;
-  padding: 20px;
-  background-color: #18181a;
-  color: white;
-  min-height: 100vh;
-  box-sizing: border-box;
+
+      
+.soundcloud-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200%; /* Adjust the maximum width as per your requirement */
+  overflow: hidden; /* Hide any overflowing content */
+  background-color: #18181a; /* Set the desired background color */
+  padding: 10px; /* Add padding if needed */
 }
 
-.content h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+.soundcloud-description {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
 }
-
-.content p {
-  font-size: 16px;
-  line-height: 1.5;
+      
+.image-container img {
+  max-width: 100%; /* Increase the value to increase the image size */
+  max-height: 300px; /* Adjust the height as per your requirement */
 }
+      
+    </style>
