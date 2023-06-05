@@ -52,13 +52,13 @@ body {
 }
 
 .main-content {
-  margin-bottom: -50px; /* Adjust the negative margin-bottom value as needed */
+  padding-bottom: 100px; /* Add padding-bottom instead of using negative margin-bottom */
 }
 
 .content {
   background-color: #18181a;
   padding: 10px;
-  text-align: Left;
+  text-align: left;
   color: white;
   margin: 0;
   display: flex;
@@ -81,7 +81,7 @@ body {
   color: white;
   height: 100px;
   margin: 0;
-  margin-top: 0;
+  margin-top: auto; /* Change margin-top to auto */
 }
 
 .footer a {
