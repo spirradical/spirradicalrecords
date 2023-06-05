@@ -52,8 +52,7 @@ body {
 }
 
 .main-content {
-  padding-bottom: 100px; /* Add padding-bottom instead of using negative margin-bottom */
-  margin-bottom: -100px; /* Add negative margin-bottom to counteract the padding */
+  padding-bottom: 50px; /* Adjust the padding-bottom value as needed */
 }
 
 .content {
