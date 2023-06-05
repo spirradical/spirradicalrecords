@@ -94,7 +94,10 @@ body {
   color: #fff;
 }
 
-
+.main-content {
+  margin-left: 10%; /* Set the left margin to the width of the sidebar */
+  height: auto; 
+}
 
 .content {
   background-color: #18181a;
