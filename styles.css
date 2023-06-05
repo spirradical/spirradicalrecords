@@ -95,8 +95,9 @@ body {
 }
 
 .main-content {
-  margin-left: 10%; /* Set the left margin to the width of the sidebar */
+  margin-left: 20%; /* Set the left margin to the width of the sidebar */
   height: auto; 
+  bottom: 0;
 }
 
 .content {
@@ -109,6 +110,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: -10px; /* Add negative margin-bottom to counteract the padding */
   height: auto; 
+  bottom: 0;
 
 }
 
