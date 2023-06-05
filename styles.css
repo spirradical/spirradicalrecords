@@ -9,6 +9,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   overflow: auto;
   background-size: cover;
+  background-color: #18181a;
 }
 
 .topnav {
