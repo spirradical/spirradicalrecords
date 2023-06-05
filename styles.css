@@ -52,7 +52,7 @@ body {
 }
 
 .main-content {
-  padding-bottom: 50px; /* Adjust the padding-bottom value as needed */
+  padding-bottom: 0; /* Set the padding-bottom value to 0 */
 }
 
 .content {
