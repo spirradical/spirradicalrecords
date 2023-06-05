@@ -98,6 +98,7 @@ body {
   margin-left: 20%; /* Set the left margin to the width of the sidebar */
   height: auto; 
   bottom: 0;
+  background-color: #18181a;
 }
 
 .content {
