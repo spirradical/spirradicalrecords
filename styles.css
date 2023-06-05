@@ -101,7 +101,7 @@ body {
 .content {
   background-color: #18181a;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: white;
   margin: 0;
   display: flex;
