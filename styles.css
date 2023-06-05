@@ -96,6 +96,7 @@ body {
 
 .main-content {
   margin-left: 20%; /* Set the left margin to the width of the sidebar */
+  height: auto; 
 }
 
 .content {
@@ -107,6 +108,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -10px; /* Add negative margin-bottom to counteract the padding */
+  height: auto; 
+
 }
 
 .footer {
