@@ -56,7 +56,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 20%; /* Adjust the width as needed */
+  width: 10%; /* Adjust the width as needed */
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as needed */
   z-index: 999;
 }
