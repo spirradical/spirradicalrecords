@@ -139,8 +139,9 @@ body {
 
 .footer a {
   display: inline-block;
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px;
   vertical-align: middle;
+  text-align: center; /* Add text-align: center property */
 }
 
 
