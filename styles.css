@@ -246,29 +246,6 @@ a:active {
 
 
 
-/* CSS for screens up to 599px (mobile) */
-@media (max-width: 599px) {
-  .sidebar {
-    /* Styles for mobile */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .sidebar-button {
-    /* Styles for sidebar buttons in mobile */
-    display: inline-block;
-    margin: 5px;
-  }
-
-  .main-content {
-    /* Styles for mobile */
-    margin-top: 20px;
-  }
-}
 
 
 
