@@ -128,12 +128,13 @@ body {
   background-clip: border-box;
   text-align: center;
   color: white;
-  height: 100px;
   margin-top: auto; /* Change margin-top to auto */
   position: fixed; /* Position the footer fixed at the bottom */
   left: 0;
   bottom: 0;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 
