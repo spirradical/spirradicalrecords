@@ -250,17 +250,15 @@ a:active {
     /* Styles for mobile */
     position: relative;
     display: flex;
-    flex-direction: row; /* Update the direction to row */
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
   .sidebar-button {
     /* Styles for sidebar buttons in mobile */
-    flex: 0 0 50%; /* Adjust the width of the buttons as needed */
+    display: inline-block;
     margin: 5px;
   }
 
@@ -269,6 +267,8 @@ a:active {
     margin-top: 20px;
   }
 }
+
+
 
 
 
