@@ -248,12 +248,20 @@ a:active {
 @media (max-width: 599px) {
   .sidebar {
     /* Styles for mobile */
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .sidebar-button {
+    /* Styles for sidebar buttons in mobile */
+    flex: 0 0 50%; /* Adjust the width of the buttons as needed */
+    margin: 5px;
   }
 
   .main-content {
@@ -261,6 +269,7 @@ a:active {
     margin-top: 20px;
   }
 }
+
 
 
 
