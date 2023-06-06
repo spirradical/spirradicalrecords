@@ -242,34 +242,14 @@ a:active {
 
 
 
-/* CSS for screens wider than 600px */
-@media (min-width: 600px) {
-  .sidebar {
-    /* Styles for desktop */
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    z-index: 999;
-  }
 
-  .main-content {
-    /* Styles for desktop */
-    margin-left: 20%; /* Set the left margin to the width of the sidebar */
-    height: auto;
-    bottom: 0;
-    background-color: #18181a;
-  }
-}
 
 /* CSS for screens up to 599px (mobile) */
 @media (max-width: 599px) {
   .sidebar {
     /* Styles for mobile */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
@@ -281,6 +261,7 @@ a:active {
     margin-top: 20px;
   }
 }
+
 
 
 
