@@ -203,24 +203,7 @@ a:active {
 
 
 /* Styles for smaller screens */
-@media (max-width: 600px) {
-  .topnav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #18181a;
-    padding: 10px 0;
-  }
 
-  .topnav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #f2f2f2;
-  }
-}
 
 
 
