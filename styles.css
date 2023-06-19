@@ -96,14 +96,6 @@ body {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
 .content {
   background-color: #18181a;
   padding: 0 10px;
@@ -201,7 +193,6 @@ a:active {
   font-weight: 100;
 }
 
-
 /* Styles for smaller screens */
 @media (max-width: 600px) {
   .sidebar-container {
@@ -223,21 +214,18 @@ a:active {
     flex-direction: column;
   }
 
-
-.sidebar-button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 20px;
-  background-color: #ddd;
-  border: none;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  .sidebar-button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
 }
-}
-
-
