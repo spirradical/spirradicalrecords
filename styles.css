@@ -173,10 +173,11 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 200%;
+  max-width: 100%;
   overflow: hidden;
   background-color: #18181a;
   padding: 10px;
+  margin-bottom: 30px;
 }
 
 .soundcloud-description {
