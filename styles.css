@@ -204,25 +204,24 @@ a:active {
 
 /* Styles for smaller screens */
 @media (max-width: 600px) {
-.sidebar-container {
-  position: fixed;
-  top: 50px; /* Change this value to adjust the vertical position */
-  left: 20px; /* Change this value to adjust the horizontal position */
-  bottom: auto; /* Change this value to adjust the vertical position or use 'auto' */
-  width: 200px; /* Change this value to adjust the width */
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
+  .sidebar-container {
+    position: fixed;
+    top: auto; /* Remove the 'top' property */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Adjust this value to adjust the width */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
 
-
-.sidebar {
-  position: fixed;
-  top: 50px; /* Adjust this value to change the vertical position */
-  left: 20px; /* Adjust this value to change the horizontal position */
-  transform: translateY(-50%); /* Adjust this value to fine-tune the vertical positioning */
-  display: flex;
-  flex-direction: row; /* Change this value to 'row' for horizontal display */
-}
+  .sidebar {
+    position: fixed;
+    top: auto; /* Remove the 'top' property */
+    left: 0;
+    transform: translateY(0); /* Remove the 'transform' property */
+    display: flex;
+    flex-direction: column;
+  }
 
 
 .sidebar-button {
