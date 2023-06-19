@@ -212,38 +212,3 @@ a:active {
 
 
 
-/* Replace the previous CSS code with this */
-
-@media (max-width: 600px) {
-  .sidebar-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar {
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Add a margin-top to push the sidebar below the banner */
-  }
-
-  .sidebar-button {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .sidebar-button:hover {
-    background-color: #555;
-  }
-
-  .main-content {
-    margin-top: 10px;
-  }
-}
