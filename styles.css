@@ -100,15 +100,24 @@ body {
 
 /* Styles for smaller screens */
 @media (max-width: 600px) {
-  .sidebar-container {
+  .topnav {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #18181a;
+    padding: 10px 0;
   }
-  
-  .sidebar-button {
+
+  .topnav a {
+    margin: 5px;
+  }
+
+  .banner {
     margin-bottom: 10px;
   }
 }
+
 
 
 .content {
