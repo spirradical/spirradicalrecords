@@ -124,7 +124,7 @@ body {
 
 .footer a {
   display: inline-block;
-  margin: 0 10px;
+  margin: auto;
   vertical-align: middle;
   text-align: center;
 }
