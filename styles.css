@@ -217,12 +217,13 @@ a:active {
 
 .sidebar {
   position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
+  top: 50px; /* Adjust this value to change the vertical position */
+  left: 20px; /* Adjust this value to change the horizontal position */
+  transform: translateY(-50%); /* Adjust this value to fine-tune the vertical positioning */
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Change this value to 'row' for horizontal display */
 }
+
 
 .sidebar-button {
   display: block;
