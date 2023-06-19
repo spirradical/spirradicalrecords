@@ -208,6 +208,10 @@ a:active {
   font-weight: 100;
 }
 
+
+
+
+
 /* Replace the previous CSS code with this */
 
 @media (max-width: 600px) {
@@ -221,14 +225,22 @@ a:active {
     width: 100%;
     background-color: #333;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px; /* Add a margin-top to push the sidebar below the banner */
   }
 
   .sidebar-button {
     display: block;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
+    flex-basis: 30%; /* Adjust the flex-basis value to control the button width */
+    max-width: 150px; /* Add a max-width to limit the button width */
+    text-align: center; /* Center the button text */
   }
 
   .sidebar-button:hover {
@@ -239,4 +251,3 @@ a:active {
     margin-top: 10px;
   }
 }
-
