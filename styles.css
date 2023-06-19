@@ -208,37 +208,24 @@ a:active {
   font-weight: 100;
 }
 
-/* Add this CSS code at the end of your styles.css file */
+/* Replace the previous CSS code with this */
 
 @media (max-width: 600px) {
   .sidebar-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    max-height: 100vh;
-    overflow-y: auto;
     background-color: #333;
-    z-index: 999;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .sidebar.show {
-    transform: translateX(0);
-  }
-
-  .main-content {
-    margin-left: 0;
+    padding: 10px;
   }
 
   .sidebar-button {
     display: block;
-    padding: 15px;
+    padding: 10px;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
@@ -248,10 +235,8 @@ a:active {
     background-color: #555;
   }
 
-  .sidebar-button.active {
-    background-color: #aaa;
+  .main-content {
+    margin-top: 10px;
   }
 }
-
-
 
