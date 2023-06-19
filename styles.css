@@ -203,7 +203,41 @@ a:active {
 
 
 /* Styles for smaller screens */
+@media (max-width: 600px) {
+.sidebar-container {
+  position: fixed;
+  top: 50px; /* Change this value to adjust the vertical position */
+  left: 20px; /* Change this value to adjust the horizontal position */
+  bottom: auto; /* Change this value to adjust the vertical position or use 'auto' */
+  width: 200px; /* Change this value to adjust the width */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
 
 
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+}
 
 
