@@ -98,37 +98,22 @@ body {
 
 
 
-/* Updated styles for navigation bar */
+/* Styles for smaller screens */
 @media (max-width: 600px) {
   .topnav {
-    position: relative;
-    overflow: hidden;
     background-color: #18181a;
     padding: 10px 0;
-    margin-bottom: 80px;
-  }
-
-  .topnav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .topnav li {
-    margin: 0 5px;
   }
 
   .topnav a {
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: #f2f2f2;
   }
 }
+
 
 
 
