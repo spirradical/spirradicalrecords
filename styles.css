@@ -101,22 +101,31 @@ body {
 /* Styles for smaller screens */
 @media (max-width: 600px) {
   .topnav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #18181a;
     padding: 10px 0;
   }
 
-  .topnav a {
-    margin: 5px;
+  .topnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 
-  .banner {
-    margin-bottom: 10px;
+  .topnav li {
+    margin: 0 5px;
+  }
+
+  .topnav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2;
   }
 }
+
 
 
 
