@@ -17,36 +17,26 @@
   
   
 <style>
-.image-container {
-  width: 200px; /* Adjust the width and height of the container as needed */
-  height: 200px;
-  border-radius: 50%; /* Make the container circular */
-  overflow: hidden; /* Hide any overflow to maintain the circular shape */
-  position: fixed; /* Position the container fixed to the right */
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  margin-bottom: 70px;
+ .image-container {
+    width: 200px; /* Adjust the width and height of the container as needed */
+    height: 200px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide any overflow to maintain the circular shape */
+    margin: 20px auto; /* Center the container horizontally and add some spacing */
+  }
 
-}
-
-.image-container img {
-  width: 100%; /* Make the image fill the container */
-  height: auto;
-  border-radius: 50%; /* Make the image circular */
-}
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+  }
   
   /* Media Query for smaller screens */
-@media (max-width: 600px) {
-  .image-container {
-    width: 150px; /* Adjust the width and height for smaller screens */
-    height: 150px;
-    top: auto;
-    right: auto;
-    left: 50%; /* Position the container centered horizontally */
-    transform: translateX(-50%);
-    margin-bottom: 20px; /* Add some spacing between the image and the text */
-  }
+  @media (max-width: 600px) {
+    .image-container {
+      width: 150px; /* Adjust the width and height for smaller screens */
+      height: 150px;
+    }
 }
   
   
