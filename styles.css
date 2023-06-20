@@ -170,6 +170,29 @@ a:active {
   object-fit: contain;
 }
 
+
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.image-carousel img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.image-carousel img.active {
+  opacity: 1;
+}
+
+
+
+
 .soundcloud-container {
   display: flex;
   flex-direction: column;
