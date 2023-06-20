@@ -25,6 +25,31 @@
 
       gtag('config', 'G-NCN2K7MQPK');
     </script>
+  
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll(".image-carousel img");
+    var index = 0;
+
+    function showImage() {
+      images[index].classList.add("active");
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+      setTimeout(hideImage, 5000); // Adjust the duration (in milliseconds) for each image
+    }
+
+    function hideImage() {
+      images[index].classList.remove("active");
+      setTimeout(showImage, 1000); // Adjust the delay (in milliseconds) between images
+    }
+
+    showImage();
+  });
+</script>
+
+  
+  
 </head>
   
 <body>
