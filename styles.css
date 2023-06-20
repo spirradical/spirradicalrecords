@@ -219,6 +219,18 @@ a:active {
   font-weight: 100;
 }
 
+
+
+#snake-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+
 /* Styles for smaller screens */
 @media (max-width: 600px) {
   .sidebar-container {
