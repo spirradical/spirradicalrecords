@@ -70,6 +70,116 @@
   <canvas id="game-canvas" width="400" height="400"></canvas>
 </div>
   
+  
+  // Snake Game
+   <script>
+const canvas = document.getElementById('game-canvas');
+const ctx = canvas.getContext('2d');
+const gridSize = 20;
+const gridCount = canvas.width / gridSize;
+let snake = [{ x: 10, y: 10 }];
+let apple = { x: 15, y: 10 };
+let dx = 1;
+let dy = 0;
+
+function drawSnake() {
+  ctx.fillStyle = 'green';
+  snake.forEach((segment) => {
+    ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
+  });
+}
+
+function drawApple() {
+  ctx.fillStyle = 'red';
+  ctx.fillRect(apple.x * gridSize, apple.y * gridSize, gridSize, gridSize);
+}
+
+function moveSnake() {
+  const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+  snake.unshift(head);
+  if (head.x === apple.x && head.y === apple.y) {
+    generateApple();
+  } else {
+    snake.pop();
+  }
+}
+
+function generateApple() {
+  apple.x = Math.floor(Math.random() * gridCount);
+  apple.y = Math.floor(Math.random() * gridCount);
+}
+
+function checkCollision() {
+  const head = snake[0];
+  if (
+    head.x < 0 ||
+    head.y < 0 ||
+    head.x >= gridCount ||
+    head.y >= gridCount ||
+    snake.slice(1).some((segment) => segment.x === head.x && segment.y === head.y)
+  ) {
+    return true;
+  }
+  return false;
+}
+
+function changeDirection(e) {
+  const LEFT_KEY = 37;
+  const RIGHT_KEY = 39;
+  const UP_KEY = 38;
+  const DOWN_KEY = 40;
+
+  const keyPressed = e.keyCode;
+  const goingUp = dy === -1;
+  const goingDown = dy === 1;
+  const goingLeft = dx === -1;
+  const goingRight = dx === 1;
+
+  if (keyPressed === LEFT_KEY && !goingRight) {
+    dx = -1;
+    dy = 0;
+  }
+
+  if (keyPressed === UP_KEY && !goingDown) {
+    dx = 0;
+    dy = -1;
+  }
+
+  if (keyPressed === RIGHT_KEY && !goingLeft) {
+    dx = 1;
+    dy = 0;
+  }
+
+  if (keyPressed === DOWN_KEY && !goingUp) {
+    dx = 0;
+    dy = 1;
+  }
+}
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function updateGame() {
+  if (checkCollision()) {
+    clearInterval(gameInterval);
+    alert('Game Over');
+    return;
+  }
+
+  clearCanvas();
+  drawSnake();
+  drawApple();
+  moveSnake();
+}
+
+document.addEventListener('keydown', changeDirection);
+const gameInterval = setInterval(updateGame, 100);
+
+      </script>
+  
+  
+  
 
 <div class="footer">
   <b><a href="https://open.spotify.com/artist/3JvPcL2800wv1UXCGZtGkY?si=IuAgMYaAR0Cp1KtzYac7-w&nd=1" target="_blank"><i class="fab fa-spotify fa-2x"></i></a></b>
