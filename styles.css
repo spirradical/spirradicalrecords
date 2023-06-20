@@ -85,16 +85,15 @@ body {
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  
-  /* Additional styles for a nicer appearance */
-  width: 100%; /* Make the buttons take up the full width */
-  background-color: #f2f2f2; /* Set a light background color */
-  color: #333; /* Set a dark text color */
 }
 
-.sidebar-button:hover {
-  background-color: #ccc; /* Darken the background color on hover */
-  color: #fff; /* Change the text color on hover */
+.sidebar-button.home {
+  color: black;
+}
+
+.sidebar-button.home:hover {
+  background-color: #aaa;
+  color: #fff;
 }
 
 
