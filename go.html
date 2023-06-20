@@ -67,12 +67,22 @@
   
   
  <div id="snake-game">
+  <button id="start-button">Start Game</button>
   <canvas id="game-canvas" width="400" height="400"></canvas>
 </div>
   
   
   // Snake Game
    <script>
+     
+     const startButton = document.getElementById("start-button");
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+  // Logic to start or restart the game
+}
+     
+     
 const canvas = document.getElementById('game-canvas');
 const ctx = canvas.getContext('2d');
 const gridSize = 20;
