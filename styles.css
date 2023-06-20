@@ -236,6 +236,16 @@ a:active {
   transform: translate(-50%, -50%); /* Center the element */
 }
 
+#start-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#start-button {
+  /* Styles for the start game button */
+}
+
 
 
 
