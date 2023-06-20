@@ -201,7 +201,7 @@ a:active {
   overflow: hidden;
   background-color: #18181a;
   padding: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .soundcloud-description {
@@ -229,6 +229,7 @@ a:active {
     left: auto; /* Remove 'left' property */
     transform: translateY(0); /* Remove 'transform' property */
     flex-direction: row; /* Change this value to 'row' for horizontal display */
+    margin-bottom: 50px;
 }
   
   .sidebar-button {
