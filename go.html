@@ -79,7 +79,52 @@
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-  // Logic to start or restart the game
+  const startButton = document.getElementById("start-button");
+startButton.addEventListener("click", startGame);
+
+let gameActive = false; // Flag to track if the game is currently active
+
+function startGame() {
+  if (gameActive) {
+    // If the game is already active, restart the game
+    restartGame();
+  } else {
+    // If the game is not active, start a new game
+    gameActive = true;
+    // Add your code to initialize the game, such as setting up the game board, creating the snake, and handling game logic.
+    // For example, you can call a function like initializeGame() here.
+    initializeGame();
+    startButton.textContent = "Restart Game"; // Update button text to indicate restart
+  }
+}
+
+function restartGame() {
+  // Add your code to reset the game state, such as clearing the game board, resetting the snake position, and resetting any game variables.
+  // For example, you can call a function like resetGame() here.
+  resetGame();
+  // Then, start the game again by calling the necessary functions.
+  initializeGame();
+}
+
+function initializeGame() {
+  // Add your code to start the game, such as setting up event listeners, updating game loop, and handling user input.
+  // For example, you can call functions like startGameLoop() or enableControls() here.
+  startGameLoop();
+  enableControls();
+}
+
+function resetGame() {
+  // Add your code to reset the game state, such as clearing the game board, resetting the snake position, and resetting any game variables.
+}
+
+function startGameLoop() {
+  // Add your code to run the game loop, which controls the movement and updates of the game elements.
+}
+
+function enableControls() {
+  // Add your code to enable user controls, such as listening to keyboard events to control the snake's direction.
+}
+
 }
      
      
