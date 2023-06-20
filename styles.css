@@ -233,6 +233,8 @@ a:active {
     transform: translateY(0); /* Remove 'transform' property */
     flex-direction: row; /* Change this value to 'row' for horizontal display */
     margin-bottom: 50px;
+    width: 95%;
+
 }
   
   .sidebar-button {
