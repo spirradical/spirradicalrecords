@@ -226,7 +226,7 @@ a:active {
   .sidebar {
     position: relative; /* Change 'fixed' to 'relative' */
     top: auto; /* Remove 'top' property */
-    left: auto; /* Remove 'left' property */
+    left: 10px; /* Adjust the value to move the sidebar to the right */
     transform: translateY(0); /* Remove 'transform' property */
     flex-direction: row; /* Change this value to 'row' for horizontal display */
     margin-bottom: 50px;
