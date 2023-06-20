@@ -97,14 +97,7 @@ body {
   color: #fff; /* Change the text color on hover */
 }
 
-.sidebar-button.home {
-  color: black;
-}
 
-.sidebar-button.home:hover {
-  background-color: #aaa;
-  color: #fff;
-}
 
 .content {
   background-color: #18181a;
