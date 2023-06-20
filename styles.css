@@ -205,5 +205,8 @@ a:active {
     top: auto; /* Remove 'top' property */
     left: auto; /* Remove 'left' property */
     transform: translateY(0); /* Remove 'transform' property */
+    flex-direction: row; /* Change this value to 'row' for horizontal display */
+}
+    
   }
 }
