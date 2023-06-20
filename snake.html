@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Spirradical Records</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/386bea0249.js" crossorigin="anonymous"></script>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  
+  <style>
+
+
+  
+  /* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .image-container {
+    width: 150px; /* Adjust the width and height for smaller screens */
+    height: 150px;
+    top: auto;
+    right: auto;
+    left: 50%; /* Position the container centered horizontally */
+    transform: translateX(-50%);
+    margin-bottom: 20px; /* Add some spacing between the image and the text */
+  }
+}
+
+</style>
+
+  
+  
+  
+</head>
+
+
+  
+  
+<body>
+  <div class="topnav">
+    <div class="banner">
+      <h1>SPIRRADICAL RECORDS</h1>
+      <h6>Est. 2021</h6>
+    </div>
+  </div>
+
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <a class="sidebar-button home" href="https://www.spirradicalrecords.com">Home</a>
+      <a class="sidebar-button home" href="about.html">About</a>      
+      <a class="sidebar-button home" href="music.html">Music</a>
+      <a class="sidebar-button home" href="go.html">Go</a>
+      <a class="sidebar-button home" href="services.html">Services</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="content">
+    </div>
+  </div>
+  
+  
+ <div id="snake-game">
+  <canvas id="game-canvas" width="400" height="400"></canvas>
+</div>
+  <div id="start-button-container">
+  <button id="start-button">Start Game</button>
+</div>
+  
+  
+  // Snake Game
+   <script>
+     
+     const startButton = document.getElementById("start-button");
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+  const startButton = document.getElementById("start-button");
+startButton.addEventListener("click", startGame);
+
+let gameActive = false; // Flag to track if the game is currently active
+
+function startGame() {
+  if (gameActive) {
+    // If the game is already active, restart the game
+    restartGame();
+  } else {
+    // If the game is not active, start a new game
+    gameActive = true;
+    // Add your code to initialize the game, such as setting up the game board, creating the snake, and handling game logic.
+    // For example, you can call a function like initializeGame() here.
+    initializeGame();
+    startButton.textContent = "Restart Game"; // Update button text to indicate restart
+  }
+}
+
+function restartGame() {
+  // Add your code to reset the game state, such as clearing the game board, resetting the snake position, and resetting any game variables.
+  // For example, you can call a function like resetGame() here.
+  resetGame();
+  // Then, start the game again by calling the necessary functions.
+  initializeGame();
+}
+
+function initializeGame() {
+  // Add your code to start the game, such as setting up event listeners, updating game loop, and handling user input.
+  // For example, you can call functions like startGameLoop() or enableControls() here.
+  startGameLoop();
+  enableControls();
+}
+
+function resetGame() {
+  // Add your code to reset the game state, such as clearing the game board, resetting the snake position, and resetting any game variables.
+}
+
+function startGameLoop() {
+  // Add your code to run the game loop, which controls the movement and updates of the game elements.
+}
+
+function enableControls() {
+  // Add your code to enable user controls, such as listening to keyboard events to control the snake's direction.
+}
+
+}
+     
+     
+const canvas = document.getElementById('game-canvas');
+const ctx = canvas.getContext('2d');
+const gridSize = 20;
+const gridCount = canvas.width / gridSize;
+let snake = [{ x: 10, y: 10 }];
+let apple = { x: 15, y: 10 };
+let dx = 1;
+let dy = 0;
+
+function drawSnake() {
+  ctx.fillStyle = 'green';
+  snake.forEach((segment) => {
+    ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
+  });
+}
+
+function drawApple() {
+  ctx.fillStyle = 'red';
+  ctx.fillRect(apple.x * gridSize, apple.y * gridSize, gridSize, gridSize);
+}
+
+function moveSnake() {
+  const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+  snake.unshift(head);
+  if (head.x === apple.x && head.y === apple.y) {
+    generateApple();
+  } else {
+    snake.pop();
+  }
+}
+
+function generateApple() {
+  apple.x = Math.floor(Math.random() * gridCount);
+  apple.y = Math.floor(Math.random() * gridCount);
+}
+
+function checkCollision() {
+  const head = snake[0];
+  if (
+    head.x < 0 ||
+    head.y < 0 ||
+    head.x >= gridCount ||
+    head.y >= gridCount ||
+    snake.slice(1).some((segment) => segment.x === head.x && segment.y === head.y)
+  ) {
+    return true;
+  }
+  return false;
+}
+
+function changeDirection(e) {
+  const LEFT_KEY = 37;
+  const RIGHT_KEY = 39;
+  const UP_KEY = 38;
+  const DOWN_KEY = 40;
+
+  const keyPressed = e.keyCode;
+  const goingUp = dy === -1;
+  const goingDown = dy === 1;
+  const goingLeft = dx === -1;
+  const goingRight = dx === 1;
+
+  if (keyPressed === LEFT_KEY && !goingRight) {
+    dx = -1;
+    dy = 0;
+  }
+
+  if (keyPressed === UP_KEY && !goingDown) {
+    dx = 0;
+    dy = -1;
+  }
+
+  if (keyPressed === RIGHT_KEY && !goingLeft) {
+    dx = 1;
+    dy = 0;
+  }
+
+  if (keyPressed === DOWN_KEY && !goingUp) {
+    dx = 0;
+    dy = 1;
+  }
+}
+
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function updateGame() {
+  if (checkCollision()) {
+    clearInterval(gameInterval);
+    alert('Game Over');
+    return;
+  }
+
+  clearCanvas();
+  drawSnake();
+  drawApple();
+  moveSnake();
+}
+
+document.addEventListener('keydown', changeDirection);
+const gameInterval = setInterval(updateGame, 100);
+
+      </script>
+  
+  
+  
+
+<div class="footer">
+  <b><a href="https://open.spotify.com/artist/3JvPcL2800wv1UXCGZtGkY?si=IuAgMYaAR0Cp1KtzYac7-w&nd=1" target="_blank"><i class="fab fa-spotify fa-2x"></i></a></b>
+  <b><a href="https://www.instagram.com/zachary_wj_spiro/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></b>
+  <b><a href="https://soundcloud.com/zacharywjspiro" target="_blank"><i class="fab fa-soundcloud fa-2x"></i></a></b>
+  <b><a href="mailto:zacharywjspiro@gmail.com" target="_blank"><i class="fas fa-paper-plane fa-2x"></i></a></b>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+#snake-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust the desired height */
+  width: 400px; /* Adjust the desired width */
+  background-color: #f0f0f0;
+  border: 4px solid #f0f0f0; /* Adjust the border width and color */
+  box-sizing: border-box; /* Include border in the width and height calculations */
+  margin: 0 auto; /* Add margin auto for horizontal centering */
+  position: fixed; /* Add position property */
+  top: 50%; /* Position from top */
+  left: 50%; /* Position from left */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+#start-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#start-button {
+  /* Styles for the start game button */
+}
